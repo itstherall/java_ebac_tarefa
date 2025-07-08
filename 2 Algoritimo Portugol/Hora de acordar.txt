@@ -1,0 +1,11 @@
+INICIO
+	se o relógio despertar
+		1. Abrir os olhos
+		2. Bocejar
+		3. Desligar o despertador
+		4. Espreguiçar
+		5. Levantar
+	Se não
+		1. Continue dormindo
+
+FIM 
