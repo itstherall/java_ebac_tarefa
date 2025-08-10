@@ -1,0 +1,23 @@
+package parteDois;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String nomes = new String();
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Digite os nomes: ");
+		nomes = s.nextLine(); //é para ler uma linha inteira
+		
+	
+		//separando os nomes
+		String[] separandoNomes = nomes.split(",");
+		System.out.println(separandoNomes);
+	
+	
+	}
+
+}

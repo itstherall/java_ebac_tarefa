@@ -1,0 +1,39 @@
+package parteDois;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Collections;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String nomes = new String();
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Digite os nomes: ");
+		nomes = s.nextLine(); //é para ler uma linha inteira
+		
+	
+		//separando os nomes e os inserindo em um array pela interface List
+		String[] separandoNomes = nomes.split(",");
+		
+		//declarando o arry list para preencher
+		List<String> ordenando = new ArrayList<>();
+		
+		
+		
+		for(int i=0; i < separandoNomes.length; ++i) {
+			ordenando.add(separandoNomes[i]);
+		}
+		
+		System.out.println(ordenando);
+		
+		//puxando o sort do import collections para ordendar em ordem alfabetica
+		 Collections.sort(ordenando);
+	     System.out.println("Ordem A-Z: " + ordenando);
+		
+	}
+
+}

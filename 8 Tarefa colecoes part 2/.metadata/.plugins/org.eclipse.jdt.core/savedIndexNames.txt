@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\14the\Documents\1 PROJETOS\JAVA - EBAC\Tarefas EBAC - Java\8 Tarefa colecoes part 2\.metadata\.plugins\org.eclipse.jdt.core
+2880544756.index
+1865797976.index
+3164732186.index
