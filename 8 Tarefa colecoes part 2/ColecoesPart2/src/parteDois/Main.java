@@ -12,27 +12,42 @@ public class Main {
 		String nomes = new String();
 		Scanner s = new Scanner(System.in);
 		
-		System.out.println("Digite os nomes: ");
+		System.out.println("Digite os nomes - genero(feminino ou masculino), : ");
 		nomes = s.nextLine(); //é para ler uma linha inteira
 		
 	
 		//separando os nomes e os inserindo em um array pela interface List
 		String[] separandoNomes = nomes.split(",");
+		List<String> perGenero = new ArrayList<>();
 		
-		//declarando o arry list para preencher
-		List<String> ordenando = new ArrayList<>();
-		
-		
-		
-		for(int i=0; i < separandoNomes.length; ++i) {
-			ordenando.add(separandoNomes[i]);
+		for(int i = 0; i < separandoNomes.length; ++i) {
+			perGenero.add(separandoNomes[i]);
 		}
 		
 		
-		//puxando o sort do import collections para ordendar em ordem alfabetica
-		 Collections.sort(ordenando);
-	     System.out.println("Ordem A-Z: " + ordenando);
-		s.close();
+		//Lista para separa grupos
+		List<String> mulheres = new ArrayList<>();
+		List<String> homens = new ArrayList<>();
+		
+		//conferir se cada entidade do arraylist de strign sontem substrings para definir se feminino ou masculino
+		String buscaFem = "feminino";
+		
+		for(String gnr : perGenero  ) {
+			if(gnr.contains(buscaFem)) {
+				mulheres.add(gnr);
+			} else {
+				homens.add(gnr);
+			}
+		}
+		
+		//colocando em ordem alfabetica
+		Collections.sort(mulheres);
+		Collections.sort(homens);
+		
+		//imprimindo os resultados
+		System.out.println("\nLista de todas as mulheres A-Z:\n" + mulheres + "\n");
+		System.out.println("Lista de todos os homens A-Z:\n" + homens + "\n");
+		
 	}
 
 }

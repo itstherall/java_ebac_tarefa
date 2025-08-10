@@ -1,0 +1,53 @@
+package parteDois;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Collections;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String nomes = new String();
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Digite os nomes - genero(feminino ou masculino), : ");
+		nomes = s.nextLine(); //é para ler uma linha inteira
+		
+	
+		//separando os nomes e os inserindo em um array pela interface List
+		String[] separandoNomes = nomes.split(",");
+		List<String> perGenero = new ArrayList<>();
+		
+		for(int i = 0; i < separandoNomes.length; ++i) {
+			perGenero.add(separandoNomes[i]);
+		}
+		
+		
+		//Lista para separa grupos
+		List<String> mulheres = new ArrayList<>();
+		List<String> homens = new ArrayList<>();
+		
+		//conferir se cada entidade do arraylist de strign sontem substrings para definir se feminino ou masculino
+		String buscaFem = "feminino";
+		
+		for(String gnr : perGenero  ) {
+			if(gnr.contains(buscaFem)) {
+				mulheres.add(gnr);
+			} else {
+				homens.add(gnr);
+			}
+		}
+		
+		//colocando em ordem alfabetica
+		Collections.sort(mulheres);
+		Collections.sort(homens);
+		
+		//imprimindo os resultados
+		System.out.println("\nLista de todas as mulheres A-Z: " + mulheres + "\n");
+		System.out.println("Lista de todos os homens A-Z: " + homens + "\n");
+		
+	}
+
+}
