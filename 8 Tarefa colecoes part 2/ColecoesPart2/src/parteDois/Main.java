@@ -47,7 +47,7 @@ public class Main {
 		//imprimindo os resultados
 		System.out.println("\nLista de todas as mulheres A-Z:\n" + mulheres + "\n");
 		System.out.println("Lista de todos os homens A-Z:\n" + homens + "\n");
-		
+		s.close();
 	}
 
 }
