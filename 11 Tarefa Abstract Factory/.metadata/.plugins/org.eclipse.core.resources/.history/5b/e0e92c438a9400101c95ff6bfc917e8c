@@ -1,0 +1,12 @@
+package abstractFactory;
+
+public interface Icarro {
+	
+	public boolean clean();
+	
+	public boolean mechanicCheck();
+	
+	public float fuelCar();
+	
+	public boolean startEngine();
+}

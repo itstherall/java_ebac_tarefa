@@ -1,0 +1,9 @@
+package abstractFactory;
+
+public interface Ifabrica {
+	
+	public Veiculo create(Veiculo veiculo);
+	public boolean prepareCar(Carro carro);
+	
+	public String retrieveCar(String reqGrade);
+}
