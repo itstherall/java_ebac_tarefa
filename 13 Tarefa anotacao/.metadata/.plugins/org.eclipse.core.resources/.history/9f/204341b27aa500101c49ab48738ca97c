@@ -1,0 +1,8 @@
+package anotacao;
+
+@testandoAnotacao(value = "teste")
+public class anotei {
+	
+	//@testandoAnotacao
+	private String nome;
+}

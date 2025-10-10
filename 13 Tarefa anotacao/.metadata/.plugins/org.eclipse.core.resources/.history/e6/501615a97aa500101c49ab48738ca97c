@@ -1,0 +1,8 @@
+package TarefaAnotacoes;
+
+@Table(value = "Tabela")
+public class TesteTable {
+	
+	 int numero[];
+
+}
