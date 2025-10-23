@@ -1,0 +1,28 @@
+package reflections;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.reflect.AnnotatedElement;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		 
+		//Pega a classe table
+        Class<TesteTable> tbl = TesteTable.class;
+
+        //Verificando se tem a anotação
+        if (tbl.isAnnotationPresent(Table.class)) {
+        	
+            //Recupera a anotação
+            Table tableAnnotation = tbl.getAnnotation(Table.class);
+
+            //Mostra o valor
+            System.out.println("Nome da tabela: " + tableAnnotation.value());
+        } else {
+            System.out.println("A classe não possui a anotação @Table");
+        }
+
+	}
+
+}
