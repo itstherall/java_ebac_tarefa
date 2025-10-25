@@ -1,0 +1,18 @@
+package testes;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+
+
+//@Deprecated por alguns instantes
+
+@RunWith (Suite.class)
+@SuiteClasses({ TesteMainMulheres.class /*inserer todas as classes de teste que você quer rodar aqui*/ })
+
+public class TodosOsTestes {
+	
+	
+
+}
