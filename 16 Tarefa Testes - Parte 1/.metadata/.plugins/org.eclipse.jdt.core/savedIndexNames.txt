@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\14the\Documents\1 PROJETOS\JAVA - EBAC\Tarefas EBAC - Java\16 Tarefa Testes - Parte 1\.metadata\.plugins\org.eclipse.jdt.core
+3870797446.index
+3362162206.index
+1865797976.index
+2880544756.index
+2377806576.index

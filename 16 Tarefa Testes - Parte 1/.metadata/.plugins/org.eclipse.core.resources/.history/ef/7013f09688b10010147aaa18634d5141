@@ -1,0 +1,13 @@
+package tarefaTestes;
+
+import org.junit.Assert;
+
+public class PrimeiroTeste {
+	
+	@Test
+	public void teste() {
+		String nome = "Marta";
+		Assert.assertEquals("Marta", nome);
+	}
+}
+0

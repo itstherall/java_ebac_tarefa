@@ -1,0 +1,27 @@
+package testes;
+
+import java.util.List;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import tarefaTestes.Pessoa;
+
+public class TesteMainMulheres {
+	
+	@Test
+	public void ConfereListaDeMulheres(List<Pessoa> mulheres) {
+		
+		//recebe a lista de mulheres 
+		List<Pessoa> Efeminino = mulheres;
+		
+		//para cada pessoa da list verificamos se é uma mulher
+		for(int i = 0; i < Efeminino.size(); ++i) {
+			
+			Assert.assertEquals("Feminino", Efeminino.get(i).genero);
+		}
+		
+		
+		
+	}
+}

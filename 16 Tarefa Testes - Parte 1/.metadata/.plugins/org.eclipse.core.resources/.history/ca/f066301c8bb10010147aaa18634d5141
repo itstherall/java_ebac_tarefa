@@ -1,0 +1,19 @@
+package testes;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class PrimeiroTeste {
+	
+	@Test
+	public void teste1() {
+		String nome = "Marta";
+		Assert.assertEquals("Marta", nome);
+	}
+	
+	@Test
+	public void teste2() {
+		String nome = "Marta2";
+		Assert.assertNotEquals("Marta2", nome);
+	}
+}

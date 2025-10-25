@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module tarefaTestes {
+	requires junit;
+}
