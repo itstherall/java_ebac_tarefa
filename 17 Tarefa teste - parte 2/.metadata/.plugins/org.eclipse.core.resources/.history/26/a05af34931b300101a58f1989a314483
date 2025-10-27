@@ -1,0 +1,15 @@
+package main.service;
+
+/**
+ * @author rodrigo.pires
+ */
+public interface IContratoService {
+    String salvar();
+
+    /*
+     * todos os metodos implementados retornar uma strig verbo(inf) + com Sucesso
+     * */
+    String buscarContrato();
+    String excluirContrato();
+    String atualizarContrato();
+}

@@ -1,0 +1,12 @@
+package main.dao.mocks;
+
+/**
+ * @author rodrigo.pires
+ */
+public class ContratoDaoMock implements IContratoDao {
+
+    @Override
+    public void salvar() {
+
+    }
+}

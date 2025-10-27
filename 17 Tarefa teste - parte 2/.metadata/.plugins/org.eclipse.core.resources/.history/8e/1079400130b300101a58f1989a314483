@@ -1,0 +1,14 @@
+package main.dao;
+
+public interface IContratoDao {
+    
+	void salvar();
+	
+	//TODO
+	void buscar(); //implementar código
+	void excluir(); //implementar código
+	void atualizar(); //implementar código
+
+    
+    
+
